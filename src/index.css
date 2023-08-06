@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+  }
+
+  .step {
+    @apply border-primary text-primary cursor-pointer flex items-center justify-center w-12 h-12 text-lg mr-2  border rounded-full shrink-0;
+  }
+  .step_active {
+    @apply bg-primary  text-white;
+  }
+  .step_inactive {
+    @apply bg-gray-500 text-white font-bold py-2 px-4 rounded;
+  }
+  .step_done {
+    @apply bg-primary text-white;
+  }
+}
